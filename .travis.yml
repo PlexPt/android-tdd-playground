@@ -13,8 +13,7 @@ android:
     - extra-android-m2repository
 deploy:
   provider: releases
-  user: "plexpt"
-  password: "a88073597"
+   api_key:b6712c1e536512b5a0526478b5d1f21f4669ef32
   file: app/build/outputs/apk/app-release.apk
   skip_cleanup: true
   on:
