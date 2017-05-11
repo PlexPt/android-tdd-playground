@@ -11,6 +11,11 @@ android:
     - android-24
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
+     - extra-android-suppo
+
+script:
+  - "./gradlew assembleRelease"
+  
 deploy:
   provider: releases
    api_key:b6712c1e536512b5a0526478b5d1f21f4669ef32
@@ -19,4 +24,3 @@ deploy:
   on:
     tags: true
 
-script: ./gradlew connectedAndroidTest
